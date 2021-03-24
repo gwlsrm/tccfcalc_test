@@ -127,3 +127,20 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# binaries
+*.exe
+*.dll
+
+# other files
+*.log
+*.in
+*.out
+*.spe
+*.ain
+
+# directories
+grids/
+in_files/
+out_files/
+results/
