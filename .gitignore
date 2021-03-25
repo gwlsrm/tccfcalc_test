@@ -134,13 +134,10 @@ dmypy.json
 
 # other files
 *.log
-*.in
-*.out
 *.spe
 *.ain
+tccfcalc.in
+tccfcalc.out
 
 # directories
-grids/
-in_files/
 out_files/
-results/
