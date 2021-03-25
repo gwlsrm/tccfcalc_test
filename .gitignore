@@ -140,4 +140,4 @@ tccfcalc.in
 tccfcalc.out
 
 # directories
-out_files/
+results/

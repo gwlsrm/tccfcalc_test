@@ -48,7 +48,7 @@ if __name__ == "__main__":
             outfname = form_outfile_name(det, geom, nuclide)
             print("calc with:", tccfcalc_name)
             shutil.copy(tccfcalc_name, "tccfcalc.in")
-            os.system(' '.join(["effcalc.exe", calc_params['seed']]))
+            os.system(' '.join(["effcalc.exe -q", calc_params['seed']]))
             os.system(f"out_cmp.exe tccfcalc.out {outfname}")
             shutil.copy("tccfcalc.out", form_resfile_name(det, geom, nuclide))
             
@@ -58,7 +58,7 @@ if __name__ == "__main__":
             outfname = form_outfile_name(det, geom, nuclide)
             print("calc with:", tccfcalc_name)
             shutil.copy(tccfcalc_name, "tccfcalc.in")
-            os.system(' '.join(["effcalc.exe", calc_params['seed'], calc_params[nuclide]]))
+            os.system(' '.join(["effcalc.exe -q", calc_params['seed'], calc_params[nuclide]]))
             os.system(f"out_cmp.exe tccfcalc.out {outfname}")
             shutil.copy("tccfcalc.out", form_resfile_name(det, geom, nuclide))
             shutil.copy("test_spectr.spe", form_res_spectrum_name(det, geom, nuclide))
