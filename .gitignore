@@ -135,7 +135,7 @@ dmypy.json
 # other files
 *.log
 *.spe
-*.ain
+analyzer.ain
 tccfcalc.in
 tccfcalc.out
 
