@@ -41,6 +41,13 @@ calc_params = {
     }
 
 if __name__ == "__main__":
+    # create results directory and copy analyzer.ain
+    if not os.path.exists('results'):
+        os.mkdir('results')        
+    if not os.path.exists('analyzer.ain'):
+        shutil.copy("in_files/analyzer_ppd_8k_3MeV.ain", 'analyzer.ain')
+
+    # calculation cycle
     for det in det_list:
         nuclide = ""
         for geom in geom_list:

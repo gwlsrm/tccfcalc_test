@@ -1,0 +1,1 @@
+copy /Y ..\grids\50-3000_10p.enx ..\Lib\ENSDF2\290.enx
